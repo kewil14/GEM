@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { SharedModuleModule } from "../../shared-module/shared-module.module";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,9 @@ import { SharedModuleModule } from "../../shared-module/shared-module.module";
     imports: [
         CommonModule,
         EspaceClientRoutingModule,
-        SharedModuleModule
+        SharedModuleModule,
+        ReactiveFormsModule,
+        FormsModule
     ]
 })
 export class EspaceClientModule { }
